@@ -56,7 +56,7 @@ public class Driver {
         // get a Target info from Parser
         List<Target> targets = new ArrayList<>();
         String[] Args = takeInput();
-        /*
+
         try {
             targets = Parser.run(Args);
         } catch (InvalidUserInputException e) {
@@ -69,6 +69,6 @@ public class Driver {
         for (Target t : targets)
         {
             SingleIPDriver.start(t);
-        }*/
+        }
     }
 }

@@ -55,7 +55,8 @@ public class Driver {
     public static void main(String[] args) {
         // get a Target info from Parser
         List<Target> targets = new ArrayList<>();
-        String[] Args = takeInput();
+        String[] Args = args;
+        ///String[] Args = takeInput();
 
         try {
             targets = Parser.run(Args);

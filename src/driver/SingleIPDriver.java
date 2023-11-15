@@ -13,7 +13,7 @@ import scanner.PortStatus;
 public class SingleIPDriver
 {
     private static final int SCAN_TIMEOUT = 200;
-    private static final int THREAD_COUNT = 8;
+    private static final int THREAD_COUNT = Runtime.getRuntime().availableProcessors();
 
     public static void start(Target t)
     {
